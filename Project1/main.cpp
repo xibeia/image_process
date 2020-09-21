@@ -13,6 +13,7 @@ int main()
 	// 在窗口中显示图片   
 	imshow("图片", img);
 	// 等待6000 ms后窗口自动关闭    
+
 	waitKey(6000);
 	return 0;
 }
