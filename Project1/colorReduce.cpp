@@ -18,6 +18,7 @@ void colorReduce(cv::Mat &image) {
 	}
 }
 
+
 int main(){
 	cv::Mat imgsrc;
 	imgsrc = imread("D:/大三上学习资料/数字图像处理/lenna.jpg");
