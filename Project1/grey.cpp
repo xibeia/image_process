@@ -9,17 +9,18 @@
 //	int nc = image.cols;
 //	for (int j = 0; j < n1; j++) {
 //		for (int i = 0; i < nc; i++) {
+//
 //			uchar ave = (image.at<Vec3b>(j, i)[0] + image.at<Vec3b>(j, i)[1] + image.at<Vec3b>(j, i)[2]) / 3;
 //			image.at<Vec3b>(j, i)[0] = ave;
 //			image.at<Vec3b>(j, i)[1] = ave;
 //			image.at<Vec3b>(j, i)[2] = ave;
 //		}
-//			
+//
 //	}
 //}
 //
 //
-//int main(){
+//int main() {
 //	cv::Mat imgsrc;
 //	imgsrc = imread("D:/大三上学习资料/数字图像处理/lenna.jpg");
 //	namedWindow("图片");
@@ -27,13 +28,18 @@
 //	waitKey(0);
 //
 //	// 显示处理后的图片   
-//	 colorReduce(imgsrc);
+//	colorReduce(imgsrc);
 //
-//	 namedWindow("图片2");
-//	 imshow("图片2", imgsrc);
-//	 waitKey(0);
+//	namedWindow("图片2");
+//	imshow("图片2", imgsrc);
+//	waitKey(0);
 //
-//	
+//	cv::Mat img2;
+//	img2 = imread("D:/大三上学习资料/数字图像处理/lenna.jpg",0);
+//	namedWindow("图片3");
+//	imshow("图片3", img2);
+//	waitKey(0);
+//
 //	return 0;
 //
 //

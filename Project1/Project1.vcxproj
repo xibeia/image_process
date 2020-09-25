@@ -126,8 +126,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="colorReduce.cpp" />
+    <ClCompile Include="ex_1.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="saltImage.cpp" />
+    <ClCompile Include="grey.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
