@@ -18,6 +18,7 @@ void colorReduce(cv::Mat &image) {
 	}
 }
 
+
 void colorReduce2(cv::Mat &image,uchar  threshold = 100) {
 	int n1 = image.rows;
 	int nc = image.cols;
