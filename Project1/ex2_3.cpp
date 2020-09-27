@@ -38,5 +38,4 @@ int main() {
 	imshow("¾ØÐÎ", dispMat3);
 	waitKey(0);
 
-
 }
