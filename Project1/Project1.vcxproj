@@ -127,10 +127,11 @@
   <ItemGroup>
     <ClCompile Include="colorReduce.cpp" />
     <ClCompile Include="ex2_3.cpp" />
+    <ClCompile Include="ex2_4.cpp" />
     <ClCompile Include="exp2_2.cpp" />
-    <ClCompile Include="ex_1.cpp" />
-    <ClCompile Include="ex_2.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ex1.cpp" />
+    <ClCompile Include="ex2_1.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
     <ClCompile Include="框架.cpp" />

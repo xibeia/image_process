@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="saltImage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -27,12 +24,6 @@
     <ClCompile Include="grey.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ex_1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ex_2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="框架.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -40,6 +31,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ex2_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex2_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex2_4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
