@@ -8,7 +8,7 @@
 //int main() {
 //
 //	cv::Mat srcimg;
-//	srcimg = imread("D://大三上学习资料//数字图像处理//lenna.jpg");
+//	srcimg = imread("D://大三上学习资料//数字图像处理//22.jpg");
 //	std::vector<cv::Mat> vchannels;
 //	cv::split(srcimg, vchannels);
 //	cv::Mat mB = vchannels.at(0);

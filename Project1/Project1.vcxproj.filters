@@ -45,5 +45,14 @@
     <ClCompile Include="ex2_4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex3_1_HSVDraw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3_2_threshold.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3_3_trackbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

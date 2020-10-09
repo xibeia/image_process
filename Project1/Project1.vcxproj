@@ -128,6 +128,9 @@
     <ClCompile Include="colorReduce.cpp" />
     <ClCompile Include="ex2_3.cpp" />
     <ClCompile Include="ex2_4.cpp" />
+    <ClCompile Include="ex3_1_HSVDraw.cpp" />
+    <ClCompile Include="ex3_2_threshold.cpp" />
+    <ClCompile Include="ex3_3_trackbar.cpp" />
     <ClCompile Include="exp2_2.cpp" />
     <ClCompile Include="ex1.cpp" />
     <ClCompile Include="ex2_1.cpp" />
