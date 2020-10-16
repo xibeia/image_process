@@ -37,25 +37,6 @@ void edgeConvertBlack(cv::Mat &image) {
 	}
 }
 
-void edgeConvertWhite(cv::Mat &image) {
-
-	int n1 = image.rows;
-	int nc = image.cols;
-	//从左边开始遍历
-	for (int j = 1; j < n1; j++) {
-		for (int i = 1; i < nc; i++) {
-			if (image.at<uchar>(j - 1, i) == 255 && image.at<uchar>(j, i) == 255)
-			{
-				image.at<uchar>(j - 1, i) = 0; //检测到白的转化为黑的
-				image.at<uchar>(j, i) = 0;
-			}
-			else
-			{
-				continue;
-			}
-		}
-	}
-}
 
 
 int main() {
@@ -97,8 +78,22 @@ int main() {
 
 
 	int num_labels = connectedComponentsWithStats(dilated_cv2, labels, stats, centroids, 8, CV_32S);
-	cout << num_labels - 1 << endl;
+	cout << num_labels - 1 << endl;  
 
+	//标记连通域
+	for (int i = 1; i < num_labels; i++) {
+		Vec2d pt = centroids.at<Vec2d>(i, 0);
+		int x = stats.at<int>(i, CC_STAT_LEFT);
+		int y = stats.at<int>(i, CC_STAT_TOP);
+		int width = stats.at<int>(i, CC_STAT_WIDTH);
+		int height = stats.at<int>(i, CC_STAT_HEIGHT);
+		int area = stats.at<int>(i, CC_STAT_AREA);
+		printf("area : %d, center point(%.2f, %.2f)\n", area, pt[0], pt[1]);
+		circle(dilated_cv2, Point(pt[0], pt[1]), 2, Scalar(0, 0, 255), -1, 8, 0);
+		rectangle(dilated_cv2, Rect(x, y, width, height), Scalar(255, 0, 255), 1, 8, 0);
+	}
+
+	imshow("标记图", dilated_cv2);
 
 	waitKey(0);
 	return 0;
