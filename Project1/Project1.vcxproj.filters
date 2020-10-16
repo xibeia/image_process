@@ -45,13 +45,25 @@
     <ClCompile Include="ex2_1_split.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="exp2_2_Videocap.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ex2_3_basedraw.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ex2_4_hist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex2_2_Videocap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4_1_erodeANDdilate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4_2_connectMark.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4_3_autoCounter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4_4_countPaperclips.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

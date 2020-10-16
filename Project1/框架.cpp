@@ -11,6 +11,7 @@
 //
 //
 //int main() {
-//
-//
+	//Mat srcMat;
+//	srcMat = imread("D://大三上学习资料//数字图像处理//lenna2.jpg");
+//	return 0;
 //}

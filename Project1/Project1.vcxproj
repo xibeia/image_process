@@ -131,9 +131,13 @@
     <ClCompile Include="ex3_1_HSVDraw.cpp" />
     <ClCompile Include="ex3_2_threshold.cpp" />
     <ClCompile Include="ex3_3_trackbar.cpp" />
-    <ClCompile Include="exp2_2_Videocap.cpp" />
+    <ClCompile Include="ex2_2_Videocap.cpp" />
     <ClCompile Include="ex1.cpp" />
     <ClCompile Include="ex2_1_split.cpp" />
+    <ClCompile Include="ex4_1_erodeANDdilate.cpp" />
+    <ClCompile Include="ex4_2_connectMark.cpp" />
+    <ClCompile Include="ex4_3_autoCounter.cpp" />
+    <ClCompile Include="ex4_4_countPaperclips.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
