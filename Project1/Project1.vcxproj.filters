@@ -66,5 +66,11 @@
     <ClCompile Include="ex4_4_countPaperclips.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex5_1_medianBlur.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5_2_beauty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

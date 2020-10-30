@@ -138,6 +138,8 @@
     <ClCompile Include="ex4_2_connectMark.cpp" />
     <ClCompile Include="ex4_3_autoCounter.cpp" />
     <ClCompile Include="ex4_4_countPaperclips.cpp" />
+    <ClCompile Include="ex5_1_medianBlur.cpp" />
+    <ClCompile Include="ex5_2_beauty.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
