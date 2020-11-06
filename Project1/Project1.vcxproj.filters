@@ -72,5 +72,17 @@
     <ClCompile Include="ex5_2_beauty.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex6_1_canny.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6_2_rote.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6_5_imgadj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6_6_roteimprove.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

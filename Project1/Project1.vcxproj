@@ -140,6 +140,10 @@
     <ClCompile Include="ex4_4_countPaperclips.cpp" />
     <ClCompile Include="ex5_1_medianBlur.cpp" />
     <ClCompile Include="ex5_2_beauty.cpp" />
+    <ClCompile Include="ex6_1_canny.cpp" />
+    <ClCompile Include="ex6_2_rote.cpp" />
+    <ClCompile Include="ex6_5_imgadj.cpp" />
+    <ClCompile Include="ex6_6_roteimprove.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
