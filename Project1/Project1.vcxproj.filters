@@ -84,5 +84,14 @@
     <ClCompile Include="ex6_6_roteimprove.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex7_1_samerote.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex7_2_houghlines.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex7_3__houghlingsP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

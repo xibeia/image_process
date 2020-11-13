@@ -144,6 +144,9 @@
     <ClCompile Include="ex6_2_rote.cpp" />
     <ClCompile Include="ex6_5_imgadj.cpp" />
     <ClCompile Include="ex6_6_roteimprove.cpp" />
+    <ClCompile Include="ex7_1_samerote.cpp" />
+    <ClCompile Include="ex7_2_houghlines.cpp" />
+    <ClCompile Include="ex7_3__houghlingsP.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
