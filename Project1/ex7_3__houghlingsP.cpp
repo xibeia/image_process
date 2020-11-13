@@ -4,7 +4,6 @@
 using namespace cv;
 using namespace std;
 
-
 int main() {
 	Mat srcMat, srcMat2, dstMat;
 	srcMat2 = imread("零件.jpg", 1); //读取三通道 ，注意后面画图时，如果读取单通道后面画图会显示灰黑色，可以再读个三通道图
