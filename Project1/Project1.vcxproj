@@ -147,10 +147,14 @@
     <ClCompile Include="ex7_1_samerote.cpp" />
     <ClCompile Include="ex7_2_houghlines.cpp" />
     <ClCompile Include="ex7_3__houghlingsP.cpp" />
+    <ClCompile Include="ex8_1_findtours.cpp" />
+    <ClCompile Include="ex8_2_findtours.cpp" />
+    <ClCompile Include="ex8_3_findRedBox.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
     <ClCompile Include="框架.cpp" />
+    <ClCompile Include="ex8_3_finalChange.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

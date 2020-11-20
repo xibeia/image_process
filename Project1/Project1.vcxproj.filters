@@ -93,5 +93,17 @@
     <ClCompile Include="ex7_3__houghlingsP.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex8_1_findtours.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex8_2_findtours.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex8_3_findRedBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex8_3_finalChange.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
