@@ -10,6 +10,7 @@
 //	srcMat = imread("D://大三上学习资料//数字图像处理//lenna2.jpg",1);
 //	if (srcMat.empty()) return -1;
 //
+
 //	//练习二旋转
 //	float angle = -10.0, scale = 1;
 //
