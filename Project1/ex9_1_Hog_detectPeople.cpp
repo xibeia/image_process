@@ -5,9 +5,16 @@
 using namespace cv;
 using namespace std;
 
+//报错：注意函数变量与调用的对应！！
+int calcHog(cv::Mat src, float * hist, int nAngle = 8,int cellSize = 16) {  
+	
+	//防止cellsize设置过大
 
-int calcHog(cv::Mat &src, float * hist, int cellSize = 16, int nAngle = 8) {
-
+	if (cellSize > src.cols || cellSize > src.rows) {
+		cout << "cellSize is out!" << endl;
+		return -1;
+	}
+	
 	int nX = src.cols / cellSize; //横向block个数
 	int nY = src.rows / cellSize; //纵向block个数
 	int binAngle = 360 / nAngle;
@@ -76,6 +83,7 @@ float normL2(float * hist1, float * hist2, int size) {
 
 }
 
+
 int main() {
 
 	Mat refMat, plMat, bgMat;
@@ -96,7 +104,7 @@ int main() {
 
 	int nX = refMat.cols / cellSize; //横向block个数
 	int nY = refMat.rows / cellSize; //纵向block个数
-	int bins = nX * nY*nAngle;  //维度
+	int bins = nX * nY*nAngle;//维度 
 
 	//为直方图开辟内存
 	float *ref_hist = new float[bins];
@@ -133,21 +141,29 @@ int main() {
 	cout << "dis2与原图的相似度为：" << dis2 << endl;
 
 
-	//输出谁最相似
-	(dis1 <= dis2) ? (std::cout << "img1 is similar" << std::endl) : (std::cout << "img2 is similar" << std::endl);
-
-
+	//输出谁最相似,距离近的相似
 	imshow("ref", refMat);
-	imshow("img1", plMat);
-	imshow("img2", bgMat);
+
+	if (dis1 <= dis2) {
+		cout << "img1 is the similarist one" << endl;
+		imshow("img1", plMat);
+
+	}
+	else {
+		cout << "img2 is the similarist one" << endl;
+		imshow("img2", bgMat);
+	}
+
+
+
+
+	waitKey(0);
+
 
 	//释放内存
 	delete[] ref_hist;
 	delete[] pl_hist;
 	delete[] bg_hist;
-
-	waitKey(0);
-
 
 	return 0;
 }
