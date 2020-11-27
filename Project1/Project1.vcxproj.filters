@@ -105,5 +105,8 @@
     <ClCompile Include="ex8_3_finalChange.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex9_1_Hog_detectPeople.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

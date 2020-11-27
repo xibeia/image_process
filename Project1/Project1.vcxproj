@@ -150,6 +150,7 @@
     <ClCompile Include="ex8_1_findtours.cpp" />
     <ClCompile Include="ex8_2_findtours.cpp" />
     <ClCompile Include="ex8_3_findRedBox.cpp" />
+    <ClCompile Include="ex9_1_Hog_detectPeople.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="saltImage.cpp" />
     <ClCompile Include="grey.cpp" />
