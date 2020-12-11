@@ -108,5 +108,11 @@
     <ClCompile Include="ex9_1_Hog_detectPeople.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex11_1_gamma.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex11_2_equalizeHist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

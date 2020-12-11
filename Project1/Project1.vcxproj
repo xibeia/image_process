@@ -126,6 +126,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="colorReduce.cpp" />
+    <ClCompile Include="ex11_1_gamma.cpp" />
+    <ClCompile Include="ex11_2_equalizeHist.cpp" />
     <ClCompile Include="ex2_3_basedraw.cpp" />
     <ClCompile Include="ex2_4_hist.cpp" />
     <ClCompile Include="ex3_1_HSVDraw.cpp" />
