@@ -114,5 +114,11 @@
     <ClCompile Include="ex11_2_equalizeHist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex12_1_bagDiff.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex12_2_GusDiff.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
