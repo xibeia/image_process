@@ -45,6 +45,10 @@ int main() {
 	for (int tt = 0; tt < n; tt++) {
 		
 		bool rSucess = cap.read(frame);
+		
+		//将摄像头读取到的图像转化为灰度图
+		cvtColor(frame, frame, COLOR_BGR2GRAY);
+		//threshold(frame, frame, 100, 255, THRESH_BINARY);
 
 		if (!rSucess)
 		{
@@ -57,6 +61,7 @@ int main() {
 			//初始化meanMat 与 varMat为0
 			meanMat = Mat::zeros(bgMat.rows, bgMat.cols, bgMat.type());
 			varMat = Mat::zeros(bgMat.rows, bgMat.cols, bgMat.type());
+			dstMat = Mat::zeros(bgMat.rows, bgMat.cols, bgMat.type());
 		}
 
 		sumMat.push_back(frame); //储存frame
@@ -80,31 +85,35 @@ int main() {
 
 			//均值
 			for (int k = 0; k < n; k++) {
-				meanMat.at<uchar>(j, i) = meanMat.at<uchar>(j, i) + sumMat[k].at<uchar>(j, i) / n;  //将所有的平均值存入一个mat
+				meanMat.at<uchar>(j, i) += sumMat[k].at<uchar>(j, i)/n;  //将所有的平均值存入一个mat
 			}
 
 			for (int k = 0; k < n; k++) {
-				varMat.at<uchar>(j, i) = varMat.at<uchar>(j, i) + (sumMat[k].at<uchar>(j, i) - meanMat.at<uchar>(j, i))*(sumMat[k].at<uchar>(j, i) - meanMat.at<uchar>(j, i)) / n;  
+				varMat.at<uchar>(j, i) += pow((sumMat[k].at<uchar>(j, i) - meanMat.at<uchar>(j, i)),2)/n;  
 			}
 			//方差
-			varMat.at<uchar>(j, i) = (int)sqrt(varMat.at<uchar>(j, i));
+			//varMat.at<uchar>(j, i) = (int)sqrt(varMat.at<uchar>(j, i));
 
 		}
 	}
 
-	imshow("均值", meanMat);
+	imshow("均值", meanMat);  //记得二值化，不然会只有1/3，，，，，
+	waitKey(30);
+
+	imshow("方差", varMat);
 	waitKey(30);
 
 
 
 	//检测差分并二值化
-	int th=1; //高斯二值化时的权值
+	int th=0.7; //高斯二值化时的权值
 
 	while (1) {
 		
 
 		bool rSucess = cap.read(frame);
-		
+		cvtColor(frame, frame, COLOR_BGR2GRAY);
+
 		if (!rSucess)
 		{
 			std::cout << "不能从视频文件中读取帧" << std::endl;
@@ -119,11 +128,12 @@ int main() {
 				sub = abs(frame.at<uchar>(j, i) - meanMat.at<uchar>(j, i));
 
 				int Th=th * varMat.at<uchar>(j, i);
+
 				if (sub > Th) {
 					dstMat.at<uchar>(j, i) = 255;
 				}
 				else {
-					dstMat.at<uchar>(j, i) = 0;
+					dstMat.at<uchar>(j, i) = 0;  //dstMat 要记得初始化，不然会报错
 				}
 			}
 		}
