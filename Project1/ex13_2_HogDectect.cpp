@@ -171,6 +171,5 @@ float normL2(float * hist1, float * hist2, int size) {
 	sum = sqrt(sum);
 
 	return sum;
-
 }
 
