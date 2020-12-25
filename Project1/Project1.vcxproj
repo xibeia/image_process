@@ -130,6 +130,8 @@
     <ClCompile Include="ex11_2_equalizeHist.cpp" />
     <ClCompile Include="ex12_1_bagDiff.cpp" />
     <ClCompile Include="ex12_2_GusDiff.cpp" />
+    <ClCompile Include="ex13_1_matchTemplate.cpp" />
+    <ClCompile Include="ex13_2_HogDectect.cpp" />
     <ClCompile Include="ex2_3_basedraw.cpp" />
     <ClCompile Include="ex2_4_hist.cpp" />
     <ClCompile Include="ex3_1_HSVDraw.cpp" />
@@ -160,6 +162,7 @@
     <ClCompile Include="grey.cpp" />
     <ClCompile Include="框架.cpp" />
     <ClCompile Include="ex8_3_finalChange.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
