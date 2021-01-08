@@ -129,5 +129,17 @@
     <ClCompile Include="ex13_2_HogDectect.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex14_1_K_means.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="源1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_2_digImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex14_3_kmeanscontact.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

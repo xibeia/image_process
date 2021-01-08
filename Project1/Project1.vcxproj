@@ -132,6 +132,9 @@
     <ClCompile Include="ex12_2_GusDiff.cpp" />
     <ClCompile Include="ex13_1_matchTemplate.cpp" />
     <ClCompile Include="ex13_2_HogDectect.cpp" />
+    <ClCompile Include="ex14_1_K_means.cpp" />
+    <ClCompile Include="ex14_2_digImage.cpp" />
+    <ClCompile Include="ex14_3_kmeanscontact.cpp" />
     <ClCompile Include="ex2_3_basedraw.cpp" />
     <ClCompile Include="ex2_4_hist.cpp" />
     <ClCompile Include="ex3_1_HSVDraw.cpp" />
@@ -163,6 +166,7 @@
     <ClCompile Include="框架.cpp" />
     <ClCompile Include="ex8_3_finalChange.cpp" />
     <ClCompile Include="源.cpp" />
+    <ClCompile Include="源1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
